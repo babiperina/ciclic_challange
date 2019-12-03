@@ -1,0 +1,84 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            ul{
+                list-style:  none;
+                margin: 0;
+                padding: 0; 
+                font-family: sans-serif;
+            }
+
+            li{
+                clear: both;
+                margin-top: 20px;
+            }
+
+            img{
+                width: 70px;
+                float: left;
+                margin-right: 10px;
+            }
+            
+            strong{
+                font-size: 20px;
+            }
+
+            p{
+                margin: 5px 0;
+            }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="container">
+            <div class="row justify-content-md-center">
+                <h1>Ciclic</h1>
+            </div>
+            
+            <div class="row justify-content-md-center">
+                <form id="simulate-form">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Nome</span>
+                        </div>
+                        <input type="text" class="form-control" name="nome">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Mensalidade</span>
+                        </div>
+                        <input type="text" class="form-control" name="mensalidade">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon1">Tempo</span>
+                        </div>
+                        <input type="text" class="form-control" name="tempo">
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                        </div>
+                        <select class="custom-select" id="inputGroupSelect01">
+                            <option selected>Tempo...</option>
+                            <option value="1">1 ano</option>
+                            <option value="2">2 anos</option>
+                            <option value="3">3 anos</option>
+                        </select>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <button type="submit" class="btn btn-primary">Simular</button>
+                    </div>
+                </form>
+            </div>
+
+            
+            <div class="row justify-content-md-center">
+                <p id="form-reply"></p>
+            </div>
+        </section>
+        <script src="bundle.js"></script>
+    </body>
+</html>
